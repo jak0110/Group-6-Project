@@ -34,7 +34,7 @@
           "height": 481
         },
         "id": "b5a396c0",
-        "outputId": "4716ddee-de18-4858-8493-3cf2a4117d7c"
+        "outputId": "225e902c-a65a-453e-84a8-e66f86773ff2"
       },
       "source": [
         "import kagglehub\n",
@@ -61,13 +61,13 @@
         "  print(f\"Error loading dataset: {e}\")\n",
         "  print(\"Please ensure the dataset 'maharshipandya/-spotify-tracks-dataset' is available and 'dataset.csv' (or the correct filename) is the correct file path.\")"
       ],
-      "execution_count": 25,
+      "execution_count": 40,
       "outputs": [
         {
           "output_type": "stream",
           "name": "stderr",
           "text": [
-            "/tmp/ipykernel_1335/414754408.py:14: DeprecationWarning: Use dataset_load() instead of load_dataset(). load_dataset() will be removed in a future version.\n",
+            "/tmp/ipykernel_256/414754408.py:14: DeprecationWarning: Use dataset_load() instead of load_dataset(). load_dataset() will be removed in a future version.\n",
             "  df = kagglehub.load_dataset(\n"
           ]
         },
@@ -123,7 +123,7 @@
             ],
             "text/html": [
               "\n",
-              "  <div id=\"df-1f9cbf56-85f9-4d2a-a83f-58bdf592f719\" class=\"colab-df-container\">\n",
+              "  <div id=\"df-a4c76bce-21d8-4caf-84e8-53c2d722f9fd\" class=\"colab-df-container\">\n",
               "    <div>\n",
               "<style scoped>\n",
               "    .dataframe tbody tr th:only-of-type {\n",
@@ -293,7 +293,7 @@
               "    <div class=\"colab-df-buttons\">\n",
               "\n",
               "  <div class=\"colab-df-container\">\n",
-              "    <button class=\"colab-df-convert\" onclick=\"convertToInteractive('df-1f9cbf56-85f9-4d2a-a83f-58bdf592f719')\"\n",
+              "    <button class=\"colab-df-convert\" onclick=\"convertToInteractive('df-a4c76bce-21d8-4caf-84e8-53c2d722f9fd')\"\n",
               "            title=\"Convert this dataframe to an interactive table.\"\n",
               "            style=\"display:none;\">\n",
               "\n",
@@ -345,12 +345,12 @@
               "\n",
               "    <script>\n",
               "      const buttonEl =\n",
-              "        document.querySelector('#df-1f9cbf56-85f9-4d2a-a83f-58bdf592f719 button.colab-df-convert');\n",
+              "        document.querySelector('#df-a4c76bce-21d8-4caf-84e8-53c2d722f9fd button.colab-df-convert');\n",
               "      buttonEl.style.display =\n",
               "        google.colab.kernel.accessAllowed ? 'block' : 'none';\n",
               "\n",
               "      async function convertToInteractive(key) {\n",
-              "        const element = document.querySelector('#df-1f9cbf56-85f9-4d2a-a83f-58bdf592f719');\n",
+              "        const element = document.querySelector('#df-a4c76bce-21d8-4caf-84e8-53c2d722f9fd');\n",
               "        const dataTable =\n",
               "          await google.colab.kernel.invokeFunction('convertToInteractive',\n",
               "                                                    [key], {});\n",
@@ -395,10 +395,10 @@
       "metadata": {
         "colab": {
           "base_uri": "https://localhost:8080/",
-          "height": 203
+          "height": 471
         },
         "id": "6c1448e7",
-        "outputId": "9351d324-20ac-4e2f-abbf-7f60563ebe3d"
+        "outputId": "6f09cba7-b892-424e-a3d1-44fd11b00339"
       },
       "source": [
         "# Filter the DataFrame for items where 'mode' is 1\n",
@@ -439,7 +439,7 @@
         "else:\n",
         "  print(\"DataFrame 'df' not found or is empty. Please ensure the dataset was loaded correctly.\")"
       ],
-      "execution_count": 26,
+      "execution_count": 41,
       "outputs": [
         {
           "output_type": "display_data",
@@ -467,10 +467,10 @@
       "metadata": {
         "colab": {
           "base_uri": "https://localhost:8080/",
-          "height": 203
+          "height": 471
         },
         "id": "a6ee3ff8",
-        "outputId": "8a36b317-2788-4899-ba17-efdf8724c77b"
+        "outputId": "2908dc8a-db5d-4bc1-e9a9-5e816d9ed91c"
       },
       "source": [
         "# Filter the DataFrame for items where 'mode' is 0\n",
@@ -511,7 +511,7 @@
         "else:\n",
         "  print(\"DataFrame 'df' not found or is empty. Please ensure the dataset was loaded correctly.\")"
       ],
-      "execution_count": 27,
+      "execution_count": 42,
       "outputs": [
         {
           "output_type": "display_data",
@@ -539,10 +539,10 @@
       "metadata": {
         "colab": {
           "base_uri": "https://localhost:8080/",
-          "height": 203
+          "height": 471
         },
         "id": "2bf3ee0c",
-        "outputId": "7f781524-a542-40c0-ca2d-db0d8cc8e3dd"
+        "outputId": "54ec8adc-b71a-4f50-9529-00765c524a00"
       },
       "source": [
         "# Filter the DataFrame for items where 'mode' is 1 AND popularity is greater than 0\n",
@@ -586,7 +586,7 @@
         "else:\n",
         "  print(\"DataFrame 'df' not found or is empty. Please ensure the dataset was loaded correctly.\")"
       ],
-      "execution_count": 28,
+      "execution_count": 43,
       "outputs": [
         {
           "output_type": "display_data",
@@ -614,10 +614,10 @@
       "metadata": {
         "colab": {
           "base_uri": "https://localhost:8080/",
-          "height": 203
+          "height": 471
         },
         "id": "7486b210",
-        "outputId": "893c934a-c230-487a-896b-e5a08838b953"
+        "outputId": "fcf085ba-7dff-41b9-b20a-2fa2bc0817ba"
       },
       "source": [
         "# Filter the DataFrame for items where 'mode' is 0 AND popularity is greater than 0\n",
@@ -661,7 +661,7 @@
         "else:\n",
         "  print(\"DataFrame 'df' not found or is empty. Please ensure the dataset was loaded correctly.\")"
       ],
-      "execution_count": 29,
+      "execution_count": 44,
       "outputs": [
         {
           "output_type": "display_data",
@@ -682,7 +682,7 @@
           "base_uri": "https://localhost:8080/"
         },
         "id": "2da24bb3",
-        "outputId": "ea566a27-abfb-4f5a-81f8-627898852660"
+        "outputId": "d86d6b1f-9aa3-4fc8-8888-d664d3f3630b"
       },
       "source": [
         "# Calculate the number of songs in major keys (mode = 1)\n",
@@ -694,7 +694,7 @@
         "print(f\"Number of songs in major keys (Mode = 1): {num_songs_major_keys}\")\n",
         "print(f\"Number of songs in minor keys (Mode = 0): {num_songs_minor_keys}\")"
       ],
-      "execution_count": 30,
+      "execution_count": 45,
       "outputs": [
         {
           "output_type": "stream",
@@ -720,10 +720,10 @@
       "metadata": {
         "colab": {
           "base_uri": "https://localhost:8080/",
-          "height": 203
+          "height": 471
         },
         "id": "273896dd",
-        "outputId": "92839417-93a1-4bec-9fef-87752bd923f1"
+        "outputId": "8121969e-6eca-44ab-c6c7-d0f94355f1cb"
       },
       "source": [
         "import numpy as np\n",
@@ -777,7 +777,7 @@
         "else:\n",
         "    print(\"DataFrame 'df' not found or is empty. Please ensure the dataset was loaded correctly.\")"
       ],
-      "execution_count": 37,
+      "execution_count": 46,
       "outputs": [
         {
           "output_type": "display_data",
@@ -796,10 +796,10 @@
       "metadata": {
         "colab": {
           "base_uri": "https://localhost:8080/",
-          "height": 203
+          "height": 471
         },
         "id": "577e1dd8",
-        "outputId": "f905a7b0-a9bd-47f1-ba11-1d023841e6ee"
+        "outputId": "a523c435-9dcf-4f18-c912-59eafd1c3369"
       },
       "source": [
         "import numpy as np\n",
@@ -846,7 +846,7 @@
         "else:\n",
         "    print(\"DataFrame 'df' not found or is empty. Please ensure the dataset was loaded correctly.\")"
       ],
-      "execution_count": 39,
+      "execution_count": 47,
       "outputs": [
         {
           "output_type": "display_data",
@@ -865,10 +865,10 @@
       "metadata": {
         "colab": {
           "base_uri": "https://localhost:8080/",
-          "height": 346
+          "height": 363
         },
         "id": "657baf47",
-        "outputId": "92dad9f1-6bc2-401a-a618-8a0cbc7d824f"
+        "outputId": "99882c69-e661-44d0-abdb-1bca693dbcc8"
       },
       "source": [
         "import pandas as pd\n",
@@ -917,7 +917,7 @@
         "else:\n",
         "    print(\"DataFrame 'df' not found or is empty. Please ensure the dataset was loaded correctly.\")"
       ],
-      "execution_count": 42,
+      "execution_count": 48,
       "outputs": [
         {
           "output_type": "display_data",
@@ -949,7 +949,7 @@
             ],
             "text/html": [
               "\n",
-              "  <div id=\"df-c8e2ef1b-e77c-4e8c-8a8c-8fe14be0f987\" class=\"colab-df-container\">\n",
+              "  <div id=\"df-350feddb-4c97-44d9-b094-6a317badde22\" class=\"colab-df-container\">\n",
               "    <div>\n",
               "<style scoped>\n",
               "    .dataframe tbody tr th:only-of-type {\n",
@@ -1051,7 +1051,7 @@
               "    <div class=\"colab-df-buttons\">\n",
               "\n",
               "  <div class=\"colab-df-container\">\n",
-              "    <button class=\"colab-df-convert\" onclick=\"convertToInteractive('df-c8e2ef1b-e77c-4e8c-8a8c-8fe14be0f987')\"\n",
+              "    <button class=\"colab-df-convert\" onclick=\"convertToInteractive('df-350feddb-4c97-44d9-b094-6a317badde22')\"\n",
               "            title=\"Convert this dataframe to an interactive table.\"\n",
               "            style=\"display:none;\">\n",
               "\n",
@@ -1103,12 +1103,12 @@
               "\n",
               "    <script>\n",
               "      const buttonEl =\n",
-              "        document.querySelector('#df-c8e2ef1b-e77c-4e8c-8a8c-8fe14be0f987 button.colab-df-convert');\n",
+              "        document.querySelector('#df-350feddb-4c97-44d9-b094-6a317badde22 button.colab-df-convert');\n",
               "      buttonEl.style.display =\n",
               "        google.colab.kernel.accessAllowed ? 'block' : 'none';\n",
               "\n",
               "      async function convertToInteractive(key) {\n",
-              "        const element = document.querySelector('#df-c8e2ef1b-e77c-4e8c-8a8c-8fe14be0f987');\n",
+              "        const element = document.querySelector('#df-350feddb-4c97-44d9-b094-6a317badde22');\n",
               "        const dataTable =\n",
               "          await google.colab.kernel.invokeFunction('convertToInteractive',\n",
               "                                                    [key], {});\n",
@@ -1128,7 +1128,7 @@
               "  </div>\n",
               "\n",
               "\n",
-              "  <div id=\"id_78d3d1ef-3cbe-4818-a021-0ee420c73da6\">\n",
+              "  <div id=\"id_5ef3f341-ff06-4823-91d5-0e14f71b6b4b\">\n",
               "    <style>\n",
               "      .colab-df-generate {\n",
               "        background-color: #E8F0FE;\n",
@@ -1172,7 +1172,7 @@
               "    <script>\n",
               "      (() => {\n",
               "      const buttonEl =\n",
-              "        document.querySelector('#id_78d3d1ef-3cbe-4818-a021-0ee420c73da6 button.colab-df-generate');\n",
+              "        document.querySelector('#id_5ef3f341-ff06-4823-91d5-0e14f71b6b4b button.colab-df-generate');\n",
               "      buttonEl.style.display =\n",
               "        google.colab.kernel.accessAllowed ? 'block' : 'none';\n",
               "\n",
@@ -1210,10 +1210,10 @@
       "metadata": {
         "colab": {
           "base_uri": "https://localhost:8080/",
-          "height": 203
+          "height": 471
         },
         "id": "a15e6620",
-        "outputId": "2506d76b-4e08-498a-c68b-6a1bf327af5d"
+        "outputId": "2c09351a-9a97-41e1-ede7-25d4644207fa"
       },
       "source": [
         "# Ensure df is loaded\n",
@@ -1248,7 +1248,7 @@
         "else:\n",
         "  print(\"DataFrame 'df' not found or is empty. Please ensure the dataset was loaded correctly.\")"
       ],
-      "execution_count": 45,
+      "execution_count": 49,
       "outputs": [
         {
           "output_type": "display_data",
@@ -1276,10 +1276,10 @@
       "metadata": {
         "colab": {
           "base_uri": "https://localhost:8080/",
-          "height": 162
+          "height": 369
         },
         "id": "4de6df7f",
-        "outputId": "80b03cff-2865-42c5-e275-5f8732d43179"
+        "outputId": "8172a474-f0c2-4305-ede4-7a3a8056f9ce"
       },
       "source": [
         "import numpy as np\n",
@@ -1343,7 +1343,7 @@
         "else:\n",
         "    print(\"DataFrame 'df' not found or is empty. Please ensure the dataset was loaded correctly.\")"
       ],
-      "execution_count": 46,
+      "execution_count": 50,
       "outputs": [
         {
           "output_type": "display_data",
@@ -1373,7 +1373,7 @@
           "base_uri": "https://localhost:8080/"
         },
         "id": "b60e5957",
-        "outputId": "845ddbee-cff6-4008-ebdb-fdaffc3cb6d5"
+        "outputId": "c108ff45-fa1e-419f-f9ef-e51898501eb7"
       },
       "source": [
         "from scipy import stats\n",
@@ -1423,7 +1423,7 @@
         "else:\n",
         "    print(\"DataFrame 'df' not found or is empty. Please ensure the dataset was loaded correctly.\")"
       ],
-      "execution_count": 47,
+      "execution_count": 51,
       "outputs": [
         {
           "output_type": "stream",
