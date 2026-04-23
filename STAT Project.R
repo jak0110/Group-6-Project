@@ -22,6 +22,18 @@ catdata <- c("explicit",
              "track_genre",
              "artists"
 )
+
+# Box plots of each numeric variable
+for (num in numlist) {
+  boxplot(spotify_data[[num]],
+          main = paste("Boxplot of", num),
+          ylab = num,
+          col  = "steelblue",
+          outline = TRUE
+  )
+}
+
+
 #Bar charts for popularity biased on explicit and major/minor key
 for (cat in c("explicit", "mode")) {
   categories <- unique(spotify_data[[cat]])
